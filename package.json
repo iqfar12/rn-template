@@ -1,0 +1,19 @@
+{
+  "name": "virspirit",
+  "version": "1.0.0",
+  "description": "virtual spirit CLI",
+  "main": "./bin/index.js",
+  "bin": {
+    "virspirit": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "git-clone": "^0.2.0",
+    "yargs": "^17.7.2"
+  }
+}
