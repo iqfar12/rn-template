@@ -147,7 +147,7 @@ function findAndReplaceAndroid(path, projectName) {
                 newDir = oldDir.replace(CURRENT_PROJECT_NAME.toLowerCase(), projectName.toLowerCase())
                 fs.renameSync(oldDir, newDir)
 
-                if (newDir === `${projectName}/android/app/src/main/java/com/mantapproject` || newDir === `${projectName}/android/app/src/debug/java/com/mantapproject` || newDir === `${projectName}/android/app/src/release/java/com/mantapproject`) {
+                if (newDir === `${projectName}/android/app/src/main/java/com/${projectName.toLowerCase()}` || newDir === `${projectName}/android/app/src/debug/java/com/${projectName.toLowerCase()}` || newDir === `${projectName}/android/app/src/release/java/com/${projectName.toLowerCase()}`) {
                     const appDir = `${newDir}/app`
                     fs.mkdirSync(`${appDir}/`)
                     const subDirs = fs.readdirSync(newDir)
