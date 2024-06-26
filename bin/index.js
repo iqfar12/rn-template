@@ -16,13 +16,13 @@ const options = yargs
 
 
 
-const CURRENT_PROJECT_NAME = "VsBoilerPlateV2"
-const CURRENT_PACKAGE_NAME = "com.vsboilerplatev2"
+const CURRENT_PROJECT_NAME = "IqfarBoilerPlate"
+const CURRENT_PACKAGE_NAME = "com.iqfarboilerplate"
 if (options.i) {
     const projectName = options.i
 
     // create path and clone repo
-    const REPO_URL = "https://github.com/virtualspirit/VsBoilerPlateV2.git"
+    const REPO_URL = "https://github.com/iqfar12/rn-boilerPlate.git"
     const clone = require('git-clone');
     const targetPath = path.join("./", projectName)
     fs.mkdir(targetPath, (err) => {
